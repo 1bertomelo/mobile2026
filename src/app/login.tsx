@@ -1,15 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, TextInput, View, TouchableOpacity , Text} from 'react-native';
+import { StyleSheet, TextInput, View, TouchableOpacity , Button, Text} from 'react-native';
 import { useState } from 'react';
 
 
+
 export default function Login() {
-  
+  //    variavel   , funcao para atualizar a variavel
+const [senhaVisivel, setSenhaVisivel] = useState(false);
 
   return (
     <View style={styles.container}>
-      <TextInput placeholder="Usuário" style={styles.inputUsuario} />
-      <TextInput placeholder="Senha" style={styles.inputUsuario} secureTextEntry={true} />   
+      <View style={styles.containerInterno}>
+        <TextInput placeholder="Usuário" style={styles.inputUsuario} />
+      </View>
+         <View style={styles.containerInterno}>
+        <TextInput placeholder="Senha" style={styles.inputUsuario}
+        secureTextEntry={senhaVisivel} />   
+''      <Button title="Olho" onPress={() => setSenhaVisivel(!senhaVisivel)} />  
+      </View>
     </View>
   );
 }
@@ -23,13 +31,23 @@ const styles = StyleSheet.create({
     flexDirection: 'column', // Alinha as caixas em linha
   },
   inputUsuario:{
-    width: '80%',
+    width: '100%',
     height: 40,
     borderColor: '#ccc',
-    borderWidth: 1,
-    marginBottom: 10,
     borderRadius: 5,
     paddingHorizontal: 10,
 
-  }
+  },
+  containerInterno: {
+    flexDirection: 'row', // Alinha o input e o botão em linha
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '80%',
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    padding: 16,
+    marginBottom: 16,
+  },
 });
