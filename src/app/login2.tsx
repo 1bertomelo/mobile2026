@@ -32,7 +32,7 @@ export default function LoginScreen() {
     if (usuario === USUARIO_VALIDO && senha === SENHA_VALIDA) {
       // Navega para /home passando o nome do usuário como parâmetro
       router.push({
-        pathname: '/ExemploFlatList',
+        pathname: '/loginLista',
         params: { nome: usuario },
       });
     } else {

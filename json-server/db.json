@@ -1,0 +1,51 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Ana Silva",
+      "email": "ana@email.com"
+    },
+    {
+      "id": "2",
+      "nome": "Carlos Lima",
+      "email": "carlos@email.com"
+    },
+    {
+      "id": "3",
+      "nome": "Beatriz Costa",
+      "email": "bia@email.com"
+    },
+    {
+      "id": "1a31",
+      "nome": "Joao Teste",
+      "email": "joao@teste.com"
+    },
+    {
+      "id": "4d6f",
+      "nome": "h1",
+      "email": "1bertomelo@gmail.com"
+    },
+    {
+      "id": "d054",
+      "nome": "h2",
+      "email": "h2@gmail.com"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Notebook",
+      "preco": 3500
+    },
+    {
+      "id": "2",
+      "nome": "Mouse",
+      "preco": 80
+    },
+    {
+      "id": "3",
+      "nome": "Teclado",
+      "preco": 150
+    }
+  ]
+}

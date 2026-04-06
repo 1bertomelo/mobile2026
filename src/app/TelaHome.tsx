@@ -7,7 +7,7 @@ interface Time {
   id: number;
   nome: string;
   estado: string;
-  titulos: number;
+  titulos: number; 
   escudo: string;
 }
 
